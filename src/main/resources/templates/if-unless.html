@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+<!--로그인한 상태에서 표시할 div-->
+<!--    true 일때만 동작-->
+    <div th:if = "${isLoggedIn}">
+        <p>you are LoggedIn</p>
+    </div>
+<!--로그인하지 않는 상태에서 표시할 div-->
+<!--    false 일때만 동작-->
+    <div th:unless = "${isLoggedIn}">
+        <p>Please Login</p>
+    </div>
+</body>
+</html>

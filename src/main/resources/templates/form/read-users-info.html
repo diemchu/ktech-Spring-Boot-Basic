@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show User Info</title>
+</head>
+<body>
+    <h1 >User: [[${userName}]]</h1>
+    <div>
+        <li th:each="user : ${users}">
+            User-name: [[${user.getName()}]] ,
+            User-password: [[${user.getPassword()}]],
+            User-age: [[${user.getAge()}]]
+        </li>
+    </div>
+</body>
+</html>

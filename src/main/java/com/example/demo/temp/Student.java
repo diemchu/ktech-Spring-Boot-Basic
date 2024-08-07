@@ -2,8 +2,8 @@ package com.example.demo.temp;
 
 public class Student
 {
-    private  String name;
-    private  String email;
+     String name;
+    String email;
 
     public Student(String name, String email) {
         this.name = name;

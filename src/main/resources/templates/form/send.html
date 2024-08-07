@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send Message</title>
+</head>
+<body>
+    <h1>Send Message</h1>
+<!--    action: 이 데이터를 어디로 보낼지-->
+<!--    Thuộc tính action xác định URL mà dữ liệu biểu mẫu sẽ được gửi đến khi người dùng gửi biểu mẫu.
+Trong trường hợp này, dữ liệu sẽ được gửi tới đường dẫn /receive trên máy chủ.-->
+    <form action="/receive" method="post">
+            <label for="message-input">Message: </label>
+            <input type="text" id = "message-input" name="message"><br>
+            <label for="form-input">Form: </label>
+            <input type="text" id = "form-input" name="form"> <br>
+<!--        제출 버튼-->
+<!--        id="age": Thuộc tính id cung cấp một định danh duy nhất cho phần tử đầu vào này.
+Định danh này hữu ích khi bạn cần tham chiếu đến phần tử này bằng CSS hoặc JavaScript.-->
+<!--        name="user-age": Thuộc tính name xác định tên của phần tử đầu vào.
+Tên này sẽ được gửi cùng với giá trị nhập vào khi biểu mẫu được gửi. Đây là tên mà máy chủ sẽ sử dụng để truy cập giá trị của trường này.-->
+            <label for ="age">Age: </label>
+            <input type="text" id = "age" name ="user-age"> <br>
+            <input type="submit" value="메시지 보내기"> <br>
+
+    </form>
+</body>
+</html>
